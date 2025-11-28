@@ -7,8 +7,8 @@
 
 <!-- badges: end -->
 
-The goal of the Dithwa project, which hit Sri Lanka on November 28,
-2025, is to provide data, monitoring, and early warning capabilities.
+The Dithwa storm that hit Sri Lanka on November 28, 2025, led to this
+package, which focuses on data, monitoring, and early warning.
 
 ## Installation
 
