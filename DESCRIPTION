@@ -1,17 +1,17 @@
-Package: Dithwa
-Title: Dithwa Storm Data and Tools for Storm Monitoring and Early Warning November 2025, Sri Lanka
+Package: Ditwah
+Title: Ditwah Storm Data and Tools for Storm Monitoring and Early Warning November 2025, Sri Lanka
 Version: 0.0.1
 Authors@R: 
     person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"))
 Description: 
- Dithwa provides a collection of tools for storm data management, 
+ Ditwah provides a collection of tools for storm data management, 
  monitoring, and early warning applications in Sri Lanka. The package 
  supports the processing of station-level observations, including 
  rainfall, temperature, and humidity measurements, along with 
  time-stamped weather reports. It includes functions for detecting 
  extreme weather events, generating top and bottom summaries, 
  producing visualizations, and creating dashboard-ready outputs for 
- situational awareness. The Dithwa storm began impacting Sri Lanka on 
+ situational awareness. The Ditwah storm began impacting Sri Lanka on 
  25 November 2025.
 License: GPL (>= 3)
 Encoding: UTF-8

@@ -11,7 +11,7 @@ View(Book1)
 colnames(Book1)
 Book1$Report_Time <- as.POSIXct(Book1$Report_Time, format = "%Y-%m-%d %H%M")
 Book1
-dithwa_3hr_weather_data <- Book1
+ditwah_3hr_weather_data <- Book1
 dim(Book1)
 ## 11.30 28-11-2025
 library(readxl)
@@ -34,13 +34,13 @@ Book3_2.30PM_28_11_2025$Rainfall_mm <- as.numeric(Book3_2.30PM_28_11_2025$Rainfa
 dim(Book3_2.30PM_28_11_2025)
 
 ## Binding
-dithwa_3hr_weather_data <- bind_rows(dithwa_3hr_weather_data,
+ditwah_3hr_weather_data <- bind_rows(ditwah_3hr_weather_data,
                                      Book2_11_30_28_11)
-dithwa_3hr_weather_data <- bind_rows(dithwa_3hr_weather_data,
+ditwah_3hr_weather_data <- bind_rows(ditwah_3hr_weather_data,
                                      Book3_2.30PM_28_11_2025)
 
-View(dithwa_3hr_weather_data)
+View(ditwah_3hr_weather_data)
 
-dithwa_3hr_weather_data$report <- c(rep(1, 24), rep(2, 24), rep(3, 24))
-View(dithwa_3hr_weather_data)
-usethis::use_data(dithwa_3hr_weather_data)
+ditwah_3hr_weather_data$report <- c(rep(1, 24), rep(2, 24), rep(3, 24))
+View(ditwah_3hr_weather_data)
+usethis::use_data(ditwah_3hr_weather_data)

@@ -1,0 +1,61 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Ditwah
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of the Dithwa project, which hit Sri Lanka on November 28, 2025, is to provide data, monitoring, and early warning capabilities.
+
+## Installation
+
+You can install the development version of Ditwah from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("thiyangt/Ditwah")
+```
+
+## Load Data 3 Hour Weather Data
+
+```{r example}
+library(Ditwah)
+head(ditwah_3hr_weather_data)
+```
+
+## 2025-11-28 08:30:00 Rainfall in mm
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+library(forcats)
+
+library(ggplot2)
+library(dplyr)
+library(forcats)
+
+ditwah_3hr_weather_data |>
+  filter(report == 1) |>
+  mutate(Station_Name = fct_reorder(Station_Name, Rainfall_mm, .desc = FALSE)) |>  # reorder factor
+  ggplot(aes(y = Station_Name, x = Rainfall_mm)) + 
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = Rainfall_mm), hjust = -0.1) +  # display value outside the bar
+  labs(x = "Rainfall (mm)", y = "Station Name", title = "Rainfall by Station") +
+  theme_minimal() +
+  xlim(0, max(ditwah_3hr_weather_data$Rainfall_mm, na.rm = TRUE) * 1.1)  # add space for labels
+
+
+```
