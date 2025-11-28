@@ -44,3 +44,20 @@ View(ditwah_3hr_weather_data)
 ditwah_3hr_weather_data$report <- c(rep(1, 24), rep(2, 24), rep(3, 24))
 View(ditwah_3hr_weather_data)
 usethis::use_data(ditwah_3hr_weather_data)
+
+
+## 5.30 28 Nov 2025
+library(readxl)
+Book4_5.30PM_28_11_2025 <- read_excel("dataraw/Book4_5.30PM_28_11_2025.xlsx")
+dim(Book4_5.30PM_28_11_2025)
+View(Book4_5.30PM_28_11_2025)
+colnames(Book4_5.30PM_28_11_2025) <- colnames(Book1)
+Book4_5.30PM_28_11_2025$Report_Time <- as.POSIXct(Book4_5.30PM_28_11_2025$Report_Time,
+                                                  format = "%Y-%m-%d %H%M")
+colnames(Book4_5.30PM_28_11_2025)
+Book4_5.30PM_28_11_2025$Rainfall_mm <- as.numeric(Book4_5.30PM_28_11_2025$Rainfall_mm)
+dim(Book4_5.30PM_28_11_2025)
+Book4_5.30PM_28_11_2025$report <- rep(4, 20)
+ditwah_3hr_weather_data <- bind_rows(ditwah_3hr_weather_data,
+                                     Book4_5.30PM_28_11_2025)
+usethis::use_data(ditwah_3hr_weather_data)

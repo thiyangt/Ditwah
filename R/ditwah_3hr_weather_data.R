@@ -3,7 +3,7 @@
 #' @description This dataset contains weather station measurements collected during the Ditwah storm in November 2025 in Sri Lanka.
 #' It includes rainfall, temperature, humidity, and a summary report from each station.
 #'
-#' @format A data frame with 72 rows and 7 columns:
+#' @format A data frame with 92 rows and 7 columns:
 #' \describe{
 #'   \item{Station_ID}{Unique identifier for each weather station}
 #'   \item{Station_Name}{Name of the weather station}

@@ -5,7 +5,7 @@
 \alias{ditwah_3hr_weather_data}
 \title{Ditwah Storm 3 Hour Weather Station Data – November 2025, Sri Lanka}
 \format{
-A data frame with 72 rows and 7 columns:
+A data frame with 92 rows and 7 columns:
 \describe{
 \item{Station_ID}{Unique identifier for each weather station}
 \item{Station_Name}{Name of the weather station}
@@ -17,7 +17,7 @@ A data frame with 72 rows and 7 columns:
 }
 }
 \source{
-Department Of Meteorology
+Department Of Meteorology, Sri Lanka (https://meteo.gov.lk/)
 }
 \usage{
 ditwah_3hr_weather_data
