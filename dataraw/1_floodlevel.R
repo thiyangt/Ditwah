@@ -42,6 +42,9 @@ X9_30AM_28_11_2025flood <- X9_30AM_28_11_2025flood |>
          "RFmm_measured_at")
 X9_30AM_28_11_2025flood <- X9_30AM_28_11_2025flood |>
   rename(
+    "Water_Level" = "Water Level",
+    "River_Basin" = "River Basin",
+    "Gauging_Station" = "Gauging Station",
     "AlertLevel" = "Alert\rLevel"  ,
     "MinorFloodLevel"   = "Minor\rFlood\rLevel" ,
     "MajorFloodLevel" = "Major\rFlood\rLevel")
@@ -88,6 +91,9 @@ X12_30AM_29_11_2025flood <- X12_30AM_29_11_2025flood |>
          "RFmm_measured_at")
 X12_30AM_29_11_2025flood <- X12_30AM_29_11_2025flood |>
   rename(
+    "Water_Level" = "Water Level",
+    "River_Basin" = "River Basin",
+    "Gauging_Station" = "Gauging Station",
     "AlertLevel" = "Alert\rLevel"  ,
     "MinorFloodLevel"   = "Minor\rFlood\rLevel" ,
     "MajorFloodLevel" = "Major\rFlood\rLevel")
