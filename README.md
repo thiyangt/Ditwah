@@ -47,19 +47,24 @@ head(ditwah_3hr_weather_data)
 
 ## Flood Level Data
 
-    #> # A tibble: 6 × 15
-    #>   Report_Date Report_Time         `River Basin`           Tributory_River
-    #>   <chr>       <dttm>              <chr>                   <chr>          
-    #> 1 28-11-2025  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
-    #> 2 28-11-2025  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
-    #> 3 28-11-2026  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
-    #> 4 28-11-2026  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
-    #> 5 28-11-2028  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
-    #> 6 28-11-2028  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
-    #> # ℹ 11 more variables: `Gauging Station` <chr>, Unit <chr>, AlertLevel <dbl>,
-    #> #   MinorFloodLevel <dbl>, MajorFloodLevel <dbl>, Remarks <chr>,
-    #> #   WaterLevelRising_or_Falling <chr>, Water_Level_Time <chr>,
-    #> #   `Water Level` <dbl>, RFmm <dbl>, RFmm_measured_at <chr>
+    #> # A tibble: 154 × 16
+    #>    Report_Date Report_Time         River_Basin   Tributory_River Gauging_Station
+    #>    <chr>       <dttm>              <chr>         <chr>           <chr>          
+    #>  1 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Nagalagam Stre…
+    #>  2 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Nagalagam Stre…
+    #>  3 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Hanwella       
+    #>  4 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Hanwella       
+    #>  5 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Glencourse     
+    #>  6 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Glencourse     
+    #>  7 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Kithulgala     
+    #>  8 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Kelani Ganga    Kithulgala     
+    #>  9 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Gurugoda Oya    Holombuwa      
+    #> 10 28-11-2025  2025-11-28 09:30:00 "Kelani Gang… Gurugoda Oya    Holombuwa      
+    #> # ℹ 144 more rows
+    #> # ℹ 11 more variables: Unit <chr>, AlertLevel <dbl>, MinorFloodLevel <dbl>,
+    #> #   MajorFloodLevel <dbl>, Remarks <chr>, WaterLevelRising_or_Falling <chr>,
+    #> #   Water_Level_Time <chr>, Water_Level <dbl>, RFmm <dbl>,
+    #> #   RFmm_measured_at <chr>, Water_Level_DateTime <dttm>
 
 This package was developed for educational purposes using weather data
 recorded by the [Department of Meteorology, Sri
