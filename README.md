@@ -81,4 +81,6 @@ Centre](https://www.dmc.gov.lk/index.php?lang=en). The author of the
 package Dr. Thiyanga S. Talagala does not collect or generate the
 original data. All data provided in this package have been obtained from
 publicly available sources and transformed into a tidy format to support
-reproducible and user-friendly analysis.
+reproducible and user-friendly analysis. The data were cleaned,
+processed, and converted into a tidy format within this package by
+Dr. Thiyanga S. Talagala.
