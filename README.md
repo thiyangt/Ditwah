@@ -52,15 +52,15 @@ weather data recorded by the Department of Meteorology, Sri Lanka
 ## Flood Level Data
 
     #> # A tibble: 6 × 15
-    #>   Report_Date Report_Time `River Basin`  Tributory_River `Gauging Station` Unit 
-    #>   <chr>       <hms>       <chr>          <chr>           <chr>             <chr>
-    #> 1 28-11-2025  34200 secs  "Kelani Ganga… Kelani Ganga    Nagalagam Street  ft   
-    #> 2 28-11-2025  34200 secs  "Kelani Ganga… Kelani Ganga    Nagalagam Street  ft   
-    #> 3 28-11-2026  34200 secs  "Kelani Ganga… Kelani Ganga    Hanwella          m    
-    #> 4 28-11-2026  34200 secs  "Kelani Ganga… Kelani Ganga    Hanwella          m    
-    #> 5 28-11-2028  34200 secs  "Kelani Ganga… Kelani Ganga    Glencourse        m    
-    #> 6 28-11-2028  34200 secs  "Kelani Ganga… Kelani Ganga    Glencourse        m    
-    #> # ℹ 9 more variables: AlertLevel <dbl>, MinorFloodLevel <dbl>,
-    #> #   MajorFloodLevel <dbl>, Remarks <chr>, WaterLevelRising_or_Falling <chr>,
-    #> #   Water_Level_Time <chr>, `Water Level` <dbl>, RFmm <dbl>,
-    #> #   RFmm_measured_at <chr>
+    #>   Report_Date Report_Time         `River Basin`           Tributory_River
+    #>   <chr>       <dttm>              <chr>                   <chr>          
+    #> 1 28-11-2025  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
+    #> 2 28-11-2025  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
+    #> 3 28-11-2026  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
+    #> 4 28-11-2026  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
+    #> 5 28-11-2028  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
+    #> 6 28-11-2028  2025-11-28 09:30:00 "Kelani Ganga\r(RB 01)" Kelani Ganga   
+    #> # ℹ 11 more variables: `Gauging Station` <chr>, Unit <chr>, AlertLevel <dbl>,
+    #> #   MinorFloodLevel <dbl>, MajorFloodLevel <dbl>, Remarks <chr>,
+    #> #   WaterLevelRising_or_Falling <chr>, Water_Level_Time <chr>,
+    #> #   `Water Level` <dbl>, RFmm <dbl>, RFmm_measured_at <chr>
