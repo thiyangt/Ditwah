@@ -48,3 +48,19 @@ head(ditwah_3hr_weather_data)
 This package was developed for educational purposes using three-hourly
 weather data recorded by the Department of Meteorology, Sri Lanka
 (<https://meteo.gov.lk/> )
+
+## Flood Level Data
+
+    #> # A tibble: 6 × 15
+    #>   Report_Date Report_Time `River Basin`  Tributory_River `Gauging Station` Unit 
+    #>   <chr>       <hms>       <chr>          <chr>           <chr>             <chr>
+    #> 1 28-11-2025  34200 secs  "Kelani Ganga… Kelani Ganga    Nagalagam Street  ft   
+    #> 2 28-11-2025  34200 secs  "Kelani Ganga… Kelani Ganga    Nagalagam Street  ft   
+    #> 3 28-11-2026  34200 secs  "Kelani Ganga… Kelani Ganga    Hanwella          m    
+    #> 4 28-11-2026  34200 secs  "Kelani Ganga… Kelani Ganga    Hanwella          m    
+    #> 5 28-11-2028  34200 secs  "Kelani Ganga… Kelani Ganga    Glencourse        m    
+    #> 6 28-11-2028  34200 secs  "Kelani Ganga… Kelani Ganga    Glencourse        m    
+    #> # ℹ 9 more variables: AlertLevel <dbl>, MinorFloodLevel <dbl>,
+    #> #   MajorFloodLevel <dbl>, Remarks <chr>, WaterLevelRising_or_Falling <chr>,
+    #> #   Water_Level_Time <chr>, `Water Level` <dbl>, RFmm <dbl>,
+    #> #   RFmm_measured_at <chr>

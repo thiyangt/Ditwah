@@ -60,3 +60,9 @@ ditwah_3hr_weather_data |>
 
 This package was developed for educational purposes using three-hourly weather data recorded by the Department of Meteorology, Sri Lanka (https://meteo.gov.lk/
 )
+
+## Flood Level Data
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+flood_water_level |> head()
+```
