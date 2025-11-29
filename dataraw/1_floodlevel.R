@@ -114,7 +114,7 @@ flood_water_level <- flood_water_level |>
       Water_Level_Time == "WaterLevelat8AM" ~ dmy_hm("28-11-2024 08:00"),
       Water_Level_Time == "WaterLevelat9AM" ~ dmy_hm("28-11-2024 09:00"),
       Water_Level_Time == "WaterLevelat11PM" ~ dmy_hm("28-11-2024 23:00"),
-      Water_Level_Time == "WaterLevelat12midnight" ~ dmy_hm("28-11-2024 00:00")
+      Water_Level_Time == "WaterLevelat12midnight" ~ dmy_hm("29-11-2024 00:01")
     )
   )
 usethis::use_data(flood_water_level, overwrite = TRUE)
