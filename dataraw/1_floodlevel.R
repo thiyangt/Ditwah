@@ -107,5 +107,15 @@ flood_water_level <- dplyr::bind_rows(X9_30AM_28_11_2025flood,
                                       X12_30AM_29_11_2025flood)
 colnames(flood_water_level)
 View(flood_water_level)
+unique(flood_water_level$Water_Level_Time)
+flood_water_level <- flood_water_level |>
+  mutate(
+    Water_Level_DateTime = case_when(
+      Water_Level_Time == "WaterLevelat8AM" ~ dmy_hm("28-11-2024 08:00"),
+      Water_Level_Time == "WaterLevelat9AM" ~ dmy_hm("28-11-2024 09:00"),
+      Water_Level_Time == "WaterLevelat11PM" ~ dmy_hm("29-11-2024 23:00"),
+      Water_Level_Time == "WaterLevelat12midnight" ~ dmy_hm("29-11-2024 00:00")
+    )
+  )
 usethis::use_data(flood_water_level)
 

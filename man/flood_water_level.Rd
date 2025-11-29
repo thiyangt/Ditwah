@@ -22,6 +22,7 @@ A data frame with observations on the following 15 variables:
 \item{Water_Level}{Recorded water level at the specified measurement time.}
 \item{RFmm}{Rainfall amount (in millimetres) measured during the specified recording period.}
 \item{RFmm_measured_at}{Time at which the rainfall measurement (RFmm) was taken.}
+\item{Water_Level_DateTime}{Recorded water level at the specified measurement time in Date and Time format}
 }
 }
 \source{
