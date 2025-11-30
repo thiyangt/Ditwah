@@ -76,11 +76,9 @@ load_dashboard()
 
 This package was developed for educational purposes using weather data
 recorded by the [Department of Meteorology, Sri
-Lanka](https://meteo.gov.lk/) and [Disaster Management
-Centre](https://www.dmc.gov.lk/index.php?lang=en). The author of the
-package Dr. Thiyanga S. Talagala does not collect or generate the
-original data. All data provided in this package have been obtained from
-publicly available sources and transformed into a tidy format to support
-reproducible and user-friendly analysis. The data were cleaned,
-processed, and converted into a tidy format within this package by
-Dr. Thiyanga S. Talagala.
+Lanka](https://meteo.gov.lk/), [Disaster Management
+Centre](https://www.dmc.gov.lk/index.php?lang=en) and Hydrology and
+Disaster Management Division, Irrigation Department, Sri Laka. All data
+provided in this package have been obtained from publicly available
+sources and transformed into a tidy format to support reproducible and
+user-friendly analysis.
