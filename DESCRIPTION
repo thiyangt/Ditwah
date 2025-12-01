@@ -1,6 +1,6 @@
 Package: Ditwah
 Title: Ditwah Storm Data and Tools for Storm Monitoring and Early Warning November 2025, Sri Lanka
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"), comment=c(ORCID = "0000-0002-0656-9789"))
 Description: 
