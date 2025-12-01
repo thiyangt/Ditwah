@@ -25,20 +25,16 @@ pak::pak("thiyangt/Ditwah")
 ``` r
 library(Ditwah)
 head(ditwah_3hr_weather_data)
-#>   Station_ID      Station_Name         Report_Time Rainfall_mm Temperature_C
-#> 1      43404            JAFFNA 2025-11-28 08:30:00        32.0          24.0
-#> 2      43413            MANNAR 2025-11-28 08:30:00       103.4          24.3
-#> 3      43415          VAVUNIYA 2025-11-28 08:30:00       358.5          23.8
-#> 4      43418       TRINCOMALEE 2025-11-28 08:30:00       261.5          24.6
-#> 5      43421      ANURADHAPURA 2025-11-28 08:30:00       331.0          21.4
-#> 6      43422 MAHA ILLUPPALLAMA 2025-11-28 08:30:00       272.8          22.0
-#>   RH_% report
-#> 1  100      1
-#> 2   95      1
-#> 3   98      1
-#> 4   99      1
-#> 5  100      1
-#> 6   99      1
+#> # A tibble: 6 × 7
+#>   Station_ID Station_Name   Report_Time         Rainfall_mm Temperature_C `RH_%`
+#>        <dbl> <chr>          <dttm>                    <dbl>         <dbl>  <dbl>
+#> 1      43404 JAFFNA         2025-11-28 08:30:00         32           24      100
+#> 2      43413 MANNAR         2025-11-28 08:30:00        103.          24.3     95
+#> 3      43415 VAVUNIYA       2025-11-28 08:30:00        358.          23.8     98
+#> 4      43418 TRINCOMALEE    2025-11-28 08:30:00        262.          24.6     99
+#> 5      43421 ANURADHAPURA   2025-11-28 08:30:00        331           21.4    100
+#> 6      43422 MAHA ILLUPPAL… 2025-11-28 08:30:00        273.          22       99
+#> # ℹ 1 more variable: report <dbl>
 ```
 
 ## Data Visualisation
@@ -94,6 +90,54 @@ load_dashboard()
 ```
 
 ![](hexsticker/db.png)
+
+## Flood Progression
+
+``` r
+library(lubridate)
+#> 
+#> Attaching package: 'lubridate'
+#> The following objects are masked from 'package:base':
+#> 
+#>     date, intersect, setdiff, union
+realtime_waterlevel_kelani_ganga <- realtime_waterlevel_kelani_ganga |>
+ dplyr::mutate(
+ DateTime = ymd_h(paste(Date, Time), tz = "UTC"))
+ sub <- realtime_waterlevel_kelani_ganga |>
+ filter(HydrometricStation =="Deraniyagala")
+compute_flood_stats(data=sub,
+DataTime,
+RiverWaterLevel,
+alert = 3,
+major = 4,
+minor = 5)
+#> [[1]]
+#> # A tibble: 97 × 12
+#>    Date                 Time RiverBasin   HydrometricStation Rainfall_mm
+#>    <dttm>              <dbl> <chr>        <chr>              <chr>      
+#>  1 2025-11-26 00:00:00     8 Kelani Ganga Deraniyagala       0          
+#>  2 2025-11-26 00:00:00     9 Kelani Ganga Deraniyagala       0.9        
+#>  3 2025-11-26 00:00:00    10 Kelani Ganga Deraniyagala       2          
+#>  4 2025-11-26 00:00:00    11 Kelani Ganga Deraniyagala       1.3        
+#>  5 2025-11-26 00:00:00    12 Kelani Ganga Deraniyagala       0.5        
+#>  6 2025-11-26 00:00:00    13 Kelani Ganga Deraniyagala       NA         
+#>  7 2025-11-26 00:00:00    14 Kelani Ganga Deraniyagala       NA         
+#>  8 2025-11-26 00:00:00    15 Kelani Ganga Deraniyagala       2.1        
+#>  9 2025-11-26 00:00:00    16 Kelani Ganga Deraniyagala       1.3        
+#> 10 2025-11-26 00:00:00    17 Kelani Ganga Deraniyagala       1.7        
+#> # ℹ 87 more rows
+#> # ℹ 7 more variables: RiverWaterLevel <dbl>, RiverWaterLevel_Unit <chr>,
+#> #   Alert_level <dbl>, Minor_Flood_Level <dbl>, Major_Flood_level <dbl>,
+#> #   DateTime <dttm>, state <chr>
+#> 
+#> [[2]]
+#> # A tibble: 3 × 2
+#>   state  hours
+#>   <chr>  <dbl>
+#> 1 alert      9
+#> 2 major     66
+#> 3 normal    21
+```
 
 This package was developed for educational purposes using weather data
 recorded by the [Department of Meteorology, Sri

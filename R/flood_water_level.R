@@ -1,11 +1,11 @@
-#' Ditwah Storm Flood Monitoring Data – November 2025, Sri Lanka
+#' Ditwah storm flood monitoring data
 #'
 #' @description
 #' This dataset contains hydrological and rainfall measurements recorded at
 #' gauging stations during the Ditwah storm in November 2025, Sri Lanka.
 #' It includes water levels, flood alert thresholds, rainfall measurements,
 #' and additional operational remarks used for monitoring river conditions.
-#'
+#'@importFrom tibble tibble
 #' @format A data frame with observations on the following 15 variables:
 #' \describe{
 #'   \item{Report_Date}{Date on which the hydrological report was recorded (YYYY-MM-DD).}

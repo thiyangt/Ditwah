@@ -3,7 +3,7 @@
 \docType{data}
 \name{situation_report_30NOV1600}
 \alias{situation_report_30NOV1600}
-\title{Disaster Impact Summary by District on 2025.11.30 at 16.00 p.m}
+\title{Disaster impact summary by district on 2025.11.30 at 16.00 p.m}
 \format{
 A data frame with one row per district and the following variables:
 \describe{

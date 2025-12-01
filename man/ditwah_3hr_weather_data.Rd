@@ -3,7 +3,7 @@
 \docType{data}
 \name{ditwah_3hr_weather_data}
 \alias{ditwah_3hr_weather_data}
-\title{Ditwah Storm 3 Hour Weather Station Data – November 2025, Sri Lanka}
+\title{Ditwah storm 3 hour weather station data – November 2025, Sri Lanka}
 \format{
 A data frame with 92 rows and 7 columns:
 \describe{

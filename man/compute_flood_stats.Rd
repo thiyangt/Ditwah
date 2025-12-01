@@ -2,13 +2,15 @@
 % Please edit documentation in R/compute_flood_progression.R
 \name{compute_flood_stats}
 \alias{compute_flood_stats}
-\title{Compute Flood Progression and Crest Metrics}
+\title{Computes number of hours in alert, minor and major levels starting from 26 Nov 2025}
 \usage{
-compute_flood_stats(data, DataTime, RiverWaterLevel, alert, major, minor)
+compute_flood_stats(data, DateTime, RiverWaterLevel, alert, major, minor)
 }
 \arguments{
 \item{data}{data frame with variables date and time, river water level, alert level,
 major flood level and minor flood level}
+
+\item{DateTime}{Variable name corresponds to Date and Time (\%Y-\%m-\%d \%H:\%M)}
 
 \item{RiverWaterLevel}{Variable name corresponds to the River Water Level}
 
@@ -17,12 +19,10 @@ major flood level and minor flood level}
 \item{major}{Major flood level numeric value}
 
 \item{minor}{Minor flood level numeric value}
-
-\item{DateTime}{Variable name corresponds to Date and Time (\%Y-\%m-\%d \%H:\%M)}
 }
 \value{
-A tibble with progression and crest-related metrics
+A list containing a tibble including new variable called state classifying flood level and total number of hours spent in each state
 }
 \description{
-Computes key flood progression measures from real-time river water level data.
+Classify flood levels as alert, minor and major and compute the total number of hours in each state
 }

@@ -1,8 +1,8 @@
-#' Ditwah Storm 3 Hour Weather Station Data – November 2025, Sri Lanka
+#' Ditwah storm 3 hour weather station data – November 2025, Sri Lanka
 #'
 #' @description This dataset contains weather station measurements collected during the Ditwah storm in November 2025 in Sri Lanka.
 #' It includes rainfall, temperature, humidity, and a summary report from each station.
-#'
+#' @importFrom tibble tibble
 #' @format A data frame with 92 rows and 7 columns:
 #' \describe{
 #'   \item{Station_ID}{Unique identifier for each weather station}

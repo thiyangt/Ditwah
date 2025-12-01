@@ -1,5 +1,5 @@
 #'
-#' Load Dashboard
+#' Load dashboard
 #'
 #'Load to explore weather- and disaster-related information associated with the Ditwah Storm
 #'

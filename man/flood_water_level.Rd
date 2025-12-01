@@ -3,7 +3,7 @@
 \docType{data}
 \name{flood_water_level}
 \alias{flood_water_level}
-\title{Ditwah Storm Flood Monitoring Data – November 2025, Sri Lanka}
+\title{Ditwah storm flood monitoring data}
 \format{
 A data frame with observations on the following 15 variables:
 \describe{

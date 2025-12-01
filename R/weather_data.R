@@ -1,6 +1,4 @@
-
-
-#' Daily Rainfall Data from the Department of Meteorology, Sri Lanka
+#' Daily rainfall data during the Ditwah storm period
 #'
 #' This dataset contains daily rainfall information downloaded from the
 #' Department of Meteorology, Sri Lanka. The data includes station details,
@@ -15,7 +13,7 @@
 #'   \item{Name}{Name of the meteorological or rainfall station.}
 #'   \item{Daily_Rainfall_mm}{Recorded daily rainfall in millimetres.}
 #' }
-#'
+#'@importFrom tibble tibble
 #'@source Department of Meteorology, Sri Lanka
 #' <https://meteo.gov.lk/>
 #' @usage data(weather_report)

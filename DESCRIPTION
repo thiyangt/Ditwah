@@ -4,19 +4,18 @@ Version: 1.0.0
 Authors@R: 
     person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"), comment=c(ORCID = "0000-0002-0656-9789"))
 Description: 
- Ditwah provides a collection of tools for storm data management, 
- monitoring, and early warning applications in Sri Lanka. The package 
- supports the processing of station-level observations, including 
- rainfall, temperature, and humidity measurements, along with 
- time-stamped weather reports. It includes functions for detecting 
- extreme weather events, generating top and bottom summaries, 
- producing visualizations, and creating dashboard-ready outputs for 
- situational awareness. The Ditwah storm began impacting Sri Lanka on 
- 25 November 2025.
+ The Ditwah storm began impacting Sri Lanka on 25 November 2025. Ditwah provides a collection of tidy, well-structured datasets to 
+ support storm data management, monitoring,  and early warning applications in Sri Lanka. 
+ The publicly available data were converted to tidy data format for easy analysis.
+ The package processes weather data, flood data and situation report data (families affected, etc.).
+ The package also includes functions for analyzing river level progression and load dashboard visualizations to enhance situational awareness. This is also developed for educational purposes to support learning in data wrangling, visualization, and disaster analytics.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Imports:
+    dplyr,
+    tibble
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)
 LazyData: true

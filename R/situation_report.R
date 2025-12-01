@@ -1,4 +1,4 @@
-#' Disaster Impact Summary by District on 2025.11.30 at 16.00 p.m
+#' Disaster impact summary by district on 2025.11.30 at 16.00 p.m
 #'
 #' This dataset provides a district-level summary of the impacts of a disaster
 #' event in Sri Lanka. It includes the number of affected families, persons,
@@ -16,7 +16,7 @@
 #'   \item{Families_safetycentres}{Integer. Number of families currently residing in safety centres.}
 #'   \item{Persons_safetycentres}{Integer. Number of individuals currently residing in safety centres.}
 #' }
-#'
+#' @importFrom tibble tibble
 #' @source Disaster Management Centre, Sri Lanka
 #'
 #' @description

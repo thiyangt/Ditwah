@@ -3,7 +3,7 @@
 \docType{data}
 \name{weather_report}
 \alias{weather_report}
-\title{Daily Rainfall Data from the Department of Meteorology, Sri Lanka}
+\title{Daily rainfall data during the Ditwah storm period}
 \format{
 A data frame with the following columns:
 \describe{

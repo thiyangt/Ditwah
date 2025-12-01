@@ -3,7 +3,7 @@
 \docType{data}
 \name{realtime_waterlevel_kelani_ganga}
 \alias{realtime_waterlevel_kelani_ganga}
-\title{Real-Time Water Level Data: Kelani Ganga Basin}
+\title{Real-time water level data for Kelani river basin}
 \format{
 A data frame with the following 10 variables:
 \describe{
@@ -27,7 +27,7 @@ realtime_waterlevel_kelani_ganga
 }
 \description{
 This dataset contains real-time rainfall and river water-level observations
-from hydrometric stations in the Kelani Ganga river basin. The data were
+from hydrometric stations in the Kelani river basin. The data were
 obtained from dashboard by Hydrology and Disaster Management Division, Irrigation Department, Sri Lanka.
 }
 \keyword{datasets}

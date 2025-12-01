@@ -2,7 +2,7 @@
 % Please edit documentation in R/load_dashboard.R
 \name{load_dashboard}
 \alias{load_dashboard}
-\title{Load Dashboard}
+\title{Load dashboard}
 \usage{
 load_dashboard()
 }

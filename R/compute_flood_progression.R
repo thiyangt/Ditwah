@@ -1,5 +1,6 @@
-#' Computes Number of Hours in Alert, Minor and Major Levels starting from 26 Nov 2025
+#' Computes number of hours in alert, minor and major levels starting from 26 Nov 2025
 #'
+#' Classify flood levels as alert, minor and major and compute the total number of hours in each state
 #'
 #' @param data data frame with variables date and time, river water level, alert level,
 #' major flood level and minor flood level
@@ -8,9 +9,15 @@
 #' @param alert Alert level numeric value
 #' @param major Major flood level numeric value
 #' @param minor Minor flood level numeric value
-#' @return A tibble with progression and crest-related metrics
+#' @return A list containing a tibble including new variable called state classifying flood level and total number of hours spent in each state
+#' @importFrom dplyr mutate
+#' @importFrom dplyr case_when
+#' @importFrom dplyr lead
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarise
+#' @importFrom tibble tibble
 #' @export
-compute_flood_stats <- function(data, DataTime, RiverWaterLevel, alert, major, minor){
+compute_flood_stats <- function(data, DateTime, RiverWaterLevel, alert, major, minor){
 
 
   # --- Flood state classification ---
@@ -35,21 +42,9 @@ compute_flood_stats <- function(data, DataTime, RiverWaterLevel, alert, major, m
 
   ## Crest_level
   ##crest_level <- max(dplyr::pull(data, !!RiverWaterLevel), na.rm = TRUE)
-
-  durations
+list(
+  data,
+  durations)
 
 }
-#'@example
-#'library(lubridate)
-#'realtime_waterlevel_kelani_ganga <- realtime_waterlevel_kelani_ganga |>
-#'  dplyr::mutate(
-#'    DateTime = ymd_h(paste(Date, Time), tz = "UTC"))
-#' sub <- realtime_waterlevel_kelani_ganga |>
-#'  filter(HydrometricStation =="Deraniyagala")
-#'compute_flood_stats(data=sub,
-#'DataTime,
-#'RiverWaterLevel,
-#'alert = 3,
-#'major = 4,
-#'minor = 5)
-#'
+
