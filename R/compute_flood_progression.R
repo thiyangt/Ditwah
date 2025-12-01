@@ -1,6 +1,5 @@
-#' Compute Flood Progression and Crest Metrics
+#' Computes Number of Hours in Alert, Minor and Major Levels starting from 26 Nov 2025
 #'
-#' Computes key flood progression measures from real-time river water level data.
 #'
 #' @param data data frame with variables date and time, river water level, alert level,
 #' major flood level and minor flood level
